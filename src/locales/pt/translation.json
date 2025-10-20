@@ -92,7 +92,13 @@
   },
   "projects": {
     "title": "Projetos",
-    "subtitle": "Seção de projetos em desenvolvimento..."
+    "subtitle": "Alguns dos meus projetos open source no GitHub",
+    "loading": "Carregando projetos...",
+    "error": "Erro ao carregar projetos do GitHub",
+    "empty": "Nenhum projeto encontrado",
+    "viewCode": "Ver Código",
+    "viewDemo": "Ver Demo",
+    "viewAllGitHub": "Ver todos os projetos no GitHub"
   },
   "contact": {
     "title": "Contato",

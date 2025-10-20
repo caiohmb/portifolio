@@ -92,7 +92,13 @@
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Projects section in development..."
+    "subtitle": "Some of my open source projects on GitHub",
+    "loading": "Loading projects...",
+    "error": "Error loading projects from GitHub",
+    "empty": "No projects found",
+    "viewCode": "View Code",
+    "viewDemo": "View Demo",
+    "viewAllGitHub": "View all projects on GitHub"
   },
   "contact": {
     "title": "Contact",
