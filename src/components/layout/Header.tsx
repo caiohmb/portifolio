@@ -1,19 +1,21 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ThemeToggle } from '@/components/common';
+import { ThemeToggle, LanguageSwitcher } from '@/components/common';
 import { NavLink } from './NavLink';
 import { useScrollPosition } from '@/hooks';
-import { navigationItems } from '@/data/navigation';
+
+const navigationKeys = ['home', 'certifications', 'skills', 'projects', 'contact'];
 
 export const Header: React.FC = () => {
+  const { t } = useTranslation();
   const scrollPosition = useScrollPosition();
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isScrolled = scrollPosition > 50;
 
-  // Detect active section
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -26,9 +28,8 @@ export const Header: React.FC = () => {
       { threshold: 0.5 }
     );
 
-    navigationItems.forEach(({ href }) => {
-      const id = href.replace('#', '');
-      const element = document.getElementById(id);
+    navigationKeys.forEach((key) => {
+      const element = document.getElementById(key);
       if (element) observer.observe(element);
     });
 
@@ -44,9 +45,7 @@ export const Header: React.FC = () => {
         className={`
           fixed top-0 left-0 right-0 z-50
           transition-all duration-300 ease-in-out
-
           ${isScrolled ? 'py-3' : 'py-4'}
-
           ${isScrolled &&
             'bg-secondary/50 backdrop-blur-lg shadow-md shadow-black/5 border-b border-cyan-500/10'
           }
@@ -54,7 +53,6 @@ export const Header: React.FC = () => {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
-            {/* Logo */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -66,27 +64,35 @@ export const Header: React.FC = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-6">
-              {navigationItems.map((item, i) => (
+              {navigationKeys.map((key, i) => (
                 <motion.div
-                  key={item.href}
+                  key={key}
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 * (i + 2), duration: 0.3 }}
                 >
                   <NavLink
-                    {...item}
-                    isActive={activeSection === item.href.replace('#', '')}
+                    href={`#${key}`}
+                    label={t(`navigation.${key}`)}
+                    isActive={activeSection === key}
                   />
                 </motion.div>
               ))}
             </nav>
 
             {/* Actions */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
+              >
+                <LanguageSwitcher />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
               >
                 <ThemeToggle />
               </motion.div>
@@ -115,18 +121,18 @@ export const Header: React.FC = () => {
             className="fixed inset-0 z-40 md:hidden bg-primary/95 backdrop-blur-xl"
           >
             <nav className="flex flex-col items-center justify-center h-full gap-8">
-              {navigationItems.map((item, i) => (
+              {navigationKeys.map((key, i) => (
                 <motion.div
-                  key={item.href}
+                  key={key}
                   initial={{ opacity: 0, x: 50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 * i, duration: 0.3 }}
                 >
                   <a
-                    href={item.href}
+                    href={`#${key}`}
                     onClick={(e) => {
                       e.preventDefault();
-                      const element = document.querySelector(item.href);
+                      const element = document.querySelector(`#${key}`);
                       if (element) {
                         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
                       }
@@ -135,16 +141,19 @@ export const Header: React.FC = () => {
                     className={`
                       text-2xl font-semibold
                       transition-all duration-300
-                      ${activeSection === item.href.replace('#', '')
+                      ${activeSection === key
                         ? 'text-gradient'
                         : 'text-primary hover:text-gradient'
                       }
                     `}
                   >
-                    {item.label}
+                    {t(`navigation.${key}`)}
                   </a>
                 </motion.div>
               ))}
+               <div className="absolute bottom-10">
+                <LanguageSwitcher />
+              </div>
             </nav>
           </motion.div>
         )}

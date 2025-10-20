@@ -1,0 +1,96 @@
+{
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "name": "Caio Maia",
+    "title": "Engenheiro de Dados",
+    "tagline": [
+      "Transformando dados brutos em insights estratégicos",
+      "Construindo pipelines escaláveis e eficientes",
+      "Otimizando arquiteturas de Big Data",
+      "Democratizando o acesso a dados de qualidade"
+    ],
+    "certifications_title": "Certificações",
+    "cta_primary": "Ver Projetos",
+    "cta_secondary": "Entre em Contato"
+  },
+  "navigation": {
+    "home": "Início",
+    "certifications": "Certificações",
+    "skills": "Skills",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "skills": {
+    "title": "Skills & Competências",
+    "subtitle": "Tecnologias e habilidades que domino na área de engenharia de dados",
+    "categories": {
+      "languages_frameworks": "Linguagens & Frameworks",
+      "cloud_infrastructure": "Cloud & Infraestrutura",
+      "orchestration_etl": "Orquestração & ETL",
+      "data_storage": "Dados & Armazenamento",
+      "engineering_architecture": "Engenharia & Arquitetura",
+      "devops_cicd": "DevOps & CI/CD",
+      "analysis_bi": "Análise & BI",
+      "governance_quality": "Governança & Qualidade"
+    }
+  },
+  "certifications": {
+    "title": "Certificações",
+    "subtitle": "Minhas certificações profissionais que validam conhecimentos em engenharia de dados",
+    "verify_text": "Clique nas certificações para verificar a autenticidade",
+    "airflow_fundamentals": {
+      "name": "Airflow 3 Fundamentals",
+      "issuer": "Astronomer"
+    },
+    "dp900": {
+      "name": "DP-900: Microsoft Azure Data Fundamentals",
+      "issuer": "Microsoft"
+    },
+    "az900": {
+      "name": "AZ-900: Microsoft Azure Fundamentals",
+      "issuer": "Microsoft"
+    },
+    "dbt_fundamentals": {
+      "name": "dbt Fundamentals",
+      "issuer": "dbt Labs"
+    }
+  },
+  "about": {
+    "title": "Sobre",
+    "cards": {
+        "default": {
+            "title": "Card Default",
+            "text": "Background sutil com backdrop blur"
+        },
+        "elevated": {
+            "title": "Card Elevated",
+            "text": "Com shadow e hover effect"
+        },
+        "outlined": {
+            "title": "Card Outlined",
+            "text": "Border animado ao hover"
+        }
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Seção de projetos em desenvolvimento..."
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Entre em contato para discutir projetos de dados!",
+    "email": "Email",
+    "linkedin": "LinkedIn"
+  },
+  "skills_section": {
+    "title": "Skills",
+    "buttons_title": "Componentes Button",
+    "primary": "Primary Gradient",
+    "secondary": "Secondary Neumorphic",
+    "outline": "Outline Glassmorphism",
+    "ghost": "Ghost Minimal",
+    "small": "Small",
+    "medium": "Medium",
+    "large": "Large"
+  }
+}

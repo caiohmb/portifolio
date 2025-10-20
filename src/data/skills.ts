@@ -1,9 +1,10 @@
 import type { SkillsData } from '@/types';
 
-export const skillsData: SkillsData = {
+
+export const skillsData = {
   categories: [
     {
-      title: "Linguagens & Frameworks",
+      name: "Linguagens & Frameworks",
       icon: "💻",
       skills: [
         { name: "Python", icon: "🐍" },
@@ -14,7 +15,7 @@ export const skillsData: SkillsData = {
       ]
     },
     {
-      title: "Cloud & Infraestrutura",
+      name: "Cloud & Infraestrutura",
       icon: "☁️",
       skills: [
         { name: "AWS", icon: "☁️" },
@@ -25,7 +26,7 @@ export const skillsData: SkillsData = {
       ]
     },
     {
-      title: "Orquestração & ETL",
+      name: "Orquestração & ETL",
       icon: "🔄",
       skills: [
         { name: "Apache Airflow", icon: "🌬️" },
@@ -35,7 +36,7 @@ export const skillsData: SkillsData = {
       ]
     },
     {
-      title: "Dados & Armazenamento",
+      name: "Dados & Armazenamento",
       icon: "🗄️",
       skills: [
         { name: "PostgreSQL", icon: "🐘" },
@@ -47,7 +48,7 @@ export const skillsData: SkillsData = {
       ]
     },
     {
-      title: "Engenharia & Arquitetura",
+      name: "Engenharia & Arquitetura",
       icon: "🏗️",
       skills: [
         { name: "Arquitetura de Dados", icon: "📐" },
@@ -58,7 +59,7 @@ export const skillsData: SkillsData = {
       ]
     },
     {
-      title: "DevOps & CI/CD",
+      name: "DevOps & CI/CD",
       icon: "🚀",
       skills: [
         { name: "Git", icon: "📝" },
@@ -68,7 +69,7 @@ export const skillsData: SkillsData = {
       ]
     },
     {
-      title: "Análise & BI",
+      name: "Análise & BI",
       icon: "📈",
       skills: [
         { name: "Power BI", icon: "📊" },
@@ -78,7 +79,7 @@ export const skillsData: SkillsData = {
       ]
     },
     {
-      title: "Governança & Qualidade",
+      name: "Governança & Qualidade",
       icon: "🛡️",
       skills: [
         { name: "Data Quality", icon: "✅" },
@@ -88,4 +89,4 @@ export const skillsData: SkillsData = {
       ]
     }
   ]
-};
+} as unknown as SkillsData;

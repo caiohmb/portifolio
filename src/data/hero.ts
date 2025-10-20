@@ -2,7 +2,7 @@ import type { HeroData } from '@/types';
 
 export const heroData: HeroData = {
   greeting: "Olá, eu sou",
-  name: "Seu Nome Completo",
+  name: "Caio Maia",
   title: "Engenheiro de Dados",
   tagline: [
     "Transformando dados brutos em insights estratégicos",
@@ -18,36 +18,7 @@ export const heroData: HeroData = {
     { name: "Docker", icon: "🐳", color: "#2496ed" },
     { name: "Airflow", icon: "🌬️", color: "#017cee" }
   ],
-  certifications: [
-    {
-      name: "Airflow 3 Fundamentals",
-      icon: "🌬️",
-      issuer: "Astronomer",
-      year: 2024,
-      badgeUrl: "/badges/airflow-fundamentals.png",
-    },
-    {
-      name: "DP-900",
-      icon: "📊",
-      issuer: "Microsoft Azure Data Fundamentals",
-      year: 2024,
-      badgeUrl: "/badges/dp-900.png",
-    },
-    {
-      name: "AZ-900",
-      icon: "☁️",
-      issuer: "Microsoft Azure Fundamentals",
-      year: 2024,
-      badgeUrl: "/badges/az-900.png",
-    },
-    {
-      name: "dbt Fundamentals",
-      icon: "🔧",
-      issuer: "dbt Labs",
-      year: 2024,
-      badgeUrl: "/badges/dbt-fundamentals.png",
-    }
-  ],
+  
   cta: {
     primary: {
       text: "Ver Projetos",
