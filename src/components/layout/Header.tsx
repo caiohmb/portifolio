@@ -4,14 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ThemeToggle } from '@/components/common';
 import { NavLink } from './NavLink';
 import { useScrollPosition } from '@/hooks';
-
-const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'Sobre', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projetos', href: '#projects' },
-  { label: 'Contato', href: '#contact' }
-];
+import { navigationItems } from '@/data/navigation';
 
 export const Header: React.FC = () => {
   const scrollPosition = useScrollPosition();
@@ -33,7 +26,7 @@ export const Header: React.FC = () => {
       { threshold: 0.5 }
     );
 
-    navItems.forEach(({ href }) => {
+    navigationItems.forEach(({ href }) => {
       const id = href.replace('#', '');
       const element = document.getElementById(id);
       if (element) observer.observe(element);
@@ -73,7 +66,7 @@ export const Header: React.FC = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-6">
-              {navItems.map((item, i) => (
+              {navigationItems.map((item, i) => (
                 <motion.div
                   key={item.href}
                   initial={{ opacity: 0, y: -10 }}
@@ -122,7 +115,7 @@ export const Header: React.FC = () => {
             className="fixed inset-0 z-40 md:hidden bg-primary/95 backdrop-blur-xl"
           >
             <nav className="flex flex-col items-center justify-center h-full gap-8">
-              {navItems.map((item, i) => (
+              {navigationItems.map((item, i) => (
                 <motion.div
                   key={item.href}
                   initial={{ opacity: 0, x: 50 }}

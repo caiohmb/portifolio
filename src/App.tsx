@@ -1,6 +1,6 @@
 import { Button, Card } from '@/components/common';
 import { Header } from '@/components/layout';
-import { Hero, Certifications } from '@/components/sections';
+import { Hero, Certifications, Skills } from '@/components/sections';
 
 function App() {
   return (
@@ -13,6 +13,9 @@ function App() {
 
       {/* Certifications Section */}
       <Certifications />
+
+      {/* Skills Section */}
+      <Skills />
 
       {/* About Section */}
       <section id="about" className="min-h-screen flex items-center justify-center py-20 bg-secondary/30">

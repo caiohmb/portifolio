@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/common';
 import { ParticleBackground, TypeWriter, ScrollIndicator, GlitchEffect } from '@/components/animations';
-import { TechBadges } from './TechBadges';
 import { heroData } from '@/data/hero';
 
 export const Hero: React.FC = () => {
@@ -73,21 +72,11 @@ export const Hero: React.FC = () => {
             <TypeWriter texts={heroData.tagline} delay={0.8} />
           </motion.div>
 
-          {/* Tech Badges */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            className="pt-4"
-          >
-            <TechBadges technologies={heroData.mainTechnologies} delay={1} />
-          </motion.div>
-
           {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.4 }}
+            transition={{ duration: 0.6, delay: 1.0 }}
             className="flex flex-col sm:flex-row gap-4 justify-center pt-8"
           >
             <Button variant="primary" size="lg" onClick={scrollToProjects}>
