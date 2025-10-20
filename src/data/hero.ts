@@ -7,26 +7,33 @@ export const heroData: HeroData = {
   tagline: [
     "Transformando dados brutos em insights estratégicos",
     "Construindo pipelines escaláveis e eficientes",
+    "Desenvolvendo soluções fullstack orientadas a dados",
+    "Integrando IA/ML em arquiteturas de dados modernas",
     "Otimizando arquiteturas de Big Data",
-    "Democratizando o acesso a dados de qualidade"
+    "Criando sistemas RAG e APIs de alta performance"
   ],
   mainTechnologies: [
     { name: "Python", icon: "🐍", color: "#3776ab" },
     { name: "SQL", icon: "📊", color: "#00758f" },
+    { name: "Go", icon: "🔵", color: "#00ADD8" },
+    { name: "C#", icon: "🟣", color: "#512BD4" },
     { name: "Apache Spark", icon: "⚡", color: "#e25a1c" },
     { name: "AWS", icon: "☁️", color: "#ff9900" },
-    { name: "Docker", icon: "🐳", color: "#2496ed" },
+    { name: "RAG", icon: "🔍", color: "#00d4ff" },
     { name: "Airflow", icon: "🌬️", color: "#017cee" }
   ],
-  
+  certifications: [],
+
   cta: {
     primary: {
-      text: "Ver Projetos",
-      action: "scrollToProjects"
+      label: "Ver Projetos",
+      href: "#projects",
+      variant: "primary"
     },
     secondary: {
-      text: "Entre em Contato",
-      action: "scrollToContact"
+      label: "Entre em Contato",
+      href: "#contact",
+      variant: "secondary"
     }
   }
 };

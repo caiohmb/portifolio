@@ -6,8 +6,10 @@
     "tagline": [
       "Transformando dados brutos em insights estratégicos",
       "Construindo pipelines escaláveis e eficientes",
+      "Desenvolvendo soluções fullstack orientadas a dados",
+      "Integrando IA/ML em arquiteturas de dados modernas",
       "Otimizando arquiteturas de Big Data",
-      "Democratizando o acesso a dados de qualidade"
+      "Criando sistemas RAG e APIs de alta performance"
     ],
     "certifications_title": "Certificações",
     "cta_primary": "Ver Projetos",
@@ -24,14 +26,14 @@
     "title": "Skills & Competências",
     "subtitle": "Tecnologias e habilidades que domino na área de engenharia de dados",
     "categories": {
-      "languages_frameworks": "Linguagens & Frameworks",
+      "data_platforms": "Plataformas de Dados",
+      "processing_orchestration": "Processamento, Streaming & Orquestração",
+      "databases_storage": "Databases & Storage",
       "cloud_infrastructure": "Cloud & Infraestrutura",
-      "orchestration_etl": "Orquestração & ETL",
-      "data_storage": "Dados & Armazenamento",
-      "engineering_architecture": "Engenharia & Arquitetura",
-      "devops_cicd": "DevOps & CI/CD",
-      "analysis_bi": "Análise & BI",
-      "governance_quality": "Governança & Qualidade"
+      "analytics_bi": "Analytics & BI",
+      "governance_quality": "Governança & Qualidade",
+      "ai_ml": "IA & Machine Learning",
+      "software_devops": "Linguagens & Engenharia de Software"
     }
   },
   "certifications": {
@@ -67,13 +69,18 @@
       "Levantamento de requisitos e diagnóstico de problemas de dados",
       "Arquitetura e design de soluções de BI em Cloud e On-Premise",
       "Desenvolvimento de pipelines de dados em tempo real e batch",
+      "Sistemas RAG (Retrieval-Augmented Generation) para análise de documentos",
+      "Integração de LLMs com data warehouses via MCP",
+      "APIs REST de alta performance em Go e C#",
+      "Modelos preditivos (regressão, classificação, séries temporais)",
       "Implementação de Data Lakes, Data Warehouses e Lakehouse",
-      "Consultoria em estratégia de dados e governança",
+      "Aplicações fullstack orientadas a dados com React/TypeScript",
+      "Práticas de DataOps, MLOps e CI/CD",
       "Otimização de processos ETL/ELT e queries SQL"
     ],
     "stats": {
       "experience": {
-        "value": "4+",
+        "value": "3+",
         "label": "Anos de Experiência"
       },
       "projects": {

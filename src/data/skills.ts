@@ -4,15 +4,43 @@ import type { SkillsData } from '@/types';
 export const skillsData = {
   categories: [
     {
-      key: "languages_frameworks",
-      title: "Linguagens & Frameworks",
-      icon: "💻",
+      key: "data_platforms",
+      title: "Plataformas de Dados",
+      icon: "🏢",
       skills: [
-        { name: "Python", icon: "🐍" },
-        { name: "SQL", icon: "📊" },
-        { name: "PySpark", icon: "⚡" },
-        { name: "Pandas", icon: "🐼" },
+        { name: "Databricks", icon: "🧱" },
+        { name: "Microsoft Fabric", icon: "🔷" },
+        { name: "Azure Synapse", icon: "🔵" },
         { name: "dbt", icon: "🔧" },
+        { name: "Snowflake", icon: "❄️" },
+      ]
+    },
+    {
+      key: "processing_orchestration",
+      title: "Processamento, Streaming & Orquestração",
+      icon: "⚡",
+      skills: [
+        { name: "Apache Spark", icon: "⚡" },
+        { name: "PySpark", icon: "🔥" },
+        { name: "Apache Kafka", icon: "📨" },
+        { name: "Apache Airflow", icon: "🌬️" },
+        { name: "Kestra", icon: "🔄" },
+        { name: "Prefect", icon: "🌊" },
+      ]
+    },
+    {
+      key: "databases_storage",
+      title: "Databases & Storage",
+      icon: "🗄️",
+      skills: [
+        { name: "PostgreSQL", icon: "🐘" },
+        { name: "MongoDB", icon: "🍃" },
+        { name: "Redis", icon: "🔴" },
+        { name: "S3", icon: "📦" },
+        { name: "Athena", icon: "🔍" },
+        { name: "Trino", icon: "🚀" },
+        { name: "Data Lake", icon: "🌊" },
+        { name: "Data Warehouse", icon: "🏢" },
       ]
     },
     {
@@ -28,61 +56,13 @@ export const skillsData = {
       ]
     },
     {
-      key: "orchestration_etl",
-      title: "Orquestração & ETL",
-      icon: "🔄",
-      skills: [
-        { name: "Apache Airflow", icon: "🌬️" },
-        { name: "Apache Spark", icon: "⚡" },
-        { name: "Databricks", icon: "🧱" },
-        { name: "Apache Kafka", icon: "📨" },
-      ]
-    },
-    {
-      key: "data_storage",
-      title: "Dados & Armazenamento",
-      icon: "🗄️",
-      skills: [
-        { name: "PostgreSQL", icon: "🐘" },
-        { name: "MongoDB", icon: "🍃" },
-        { name: "Redis", icon: "🔴" },
-        { name: "S3", icon: "📦" },
-        { name: "Data Lake", icon: "🌊" },
-        { name: "Data Warehouse", icon: "🏢" },
-      ]
-    },
-    {
-      key: "engineering_architecture",
-      title: "Engenharia & Arquitetura",
-      icon: "🏗️",
-      skills: [
-        { name: "Arquitetura de Dados", icon: "📐" },
-        { name: "Modelagem de Dados", icon: "📊" },
-        { name: "Data Pipeline", icon: "🔄" },
-        { name: "APIs REST", icon: "🔌" },
-        { name: "Microserviços", icon: "🧩" },
-      ]
-    },
-    {
-      key: "devops_cicd",
-      title: "DevOps & CI/CD",
-      icon: "🚀",
-      skills: [
-        { name: "Git", icon: "📝" },
-        { name: "GitHub Actions", icon: "⚙️" },
-        { name: "Jenkins", icon: "🔨" },
-        { name: "CI/CD", icon: "🔄" },
-      ]
-    },
-    {
-      key: "analysis_bi",
-      title: "Análise & BI",
-      icon: "📈",
+      key: "analytics_bi",
+      title: "Analytics & BI",
+      icon: "📊",
       skills: [
         { name: "Power BI", icon: "📊" },
         { name: "Tableau", icon: "📉" },
         { name: "Looker", icon: "👁️" },
-        { name: "Data Analysis", icon: "🔍" },
       ]
     },
     {
@@ -90,10 +70,43 @@ export const skillsData = {
       title: "Governança & Qualidade",
       icon: "🛡️",
       skills: [
+        { name: "OpenMetadata", icon: "📚" },
         { name: "Data Quality", icon: "✅" },
         { name: "Data Governance", icon: "📋" },
-        { name: "Data Catalog", icon: "📚" },
+        { name: "Data Catalog", icon: "📖" },
         { name: "Lineage", icon: "🔗" },
+      ]
+    },
+    {
+      key: "ai_ml",
+      title: "IA & Machine Learning",
+      icon: "🤖",
+      skills: [
+        { name: "RAG", icon: "🔍" },
+        { name: "LangChain", icon: "⛓️" },
+        { name: "Vector Databases", icon: "📊" },
+        { name: "scikit-learn", icon: "📈" },
+        { name: "Regressão", icon: "📉" },
+        { name: "MLflow", icon: "🔬" },
+        { name: "MCP", icon: "🔌" },
+      ]
+    },
+    {
+      key: "software_devops",
+      title: "Linguagens & Engenharia de Software",
+      icon: "💻",
+      skills: [
+        { name: "Python", icon: "🐍" },
+        { name: "SQL", icon: "📊" },
+        { name: "Go", icon: "🔵" },
+        { name: "C#", icon: "🟣" },
+        { name: "FastAPI", icon: "⚡" },
+        { name: ".NET", icon: "🟣" },
+        { name: "APIs REST", icon: "🔌" },
+        { name: "Microserviços", icon: "🧩" },
+        { name: "Git", icon: "📝" },
+        { name: "GitHub Actions", icon: "⚙️" },
+        { name: "CI/CD", icon: "🔄" },
       ]
     }
   ]

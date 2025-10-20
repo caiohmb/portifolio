@@ -6,7 +6,6 @@ export const TypeWriter: React.FC<TypeWriterProps> = ({
   typingSpeed = 100,
   deletingSpeed = 50,
   pauseDuration = 2000,
-  delay = 0,
   className = '',
 }) => {
   const [displayText, setDisplayText] = useState('');
