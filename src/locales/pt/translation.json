@@ -56,20 +56,38 @@
     }
   },
   "about": {
-    "title": "Sobre",
-    "cards": {
-        "default": {
-            "title": "Card Default",
-            "text": "Background sutil com backdrop blur"
-        },
-        "elevated": {
-            "title": "Card Elevated",
-            "text": "Com shadow e hover effect"
-        },
-        "outlined": {
-            "title": "Card Outlined",
-            "text": "Border animado ao hover"
-        }
+    "title": "Sobre Mim",
+    "description": [
+      "Sou um profissional apaixonado por resolver problemas complexos através de soluções pragmáticas em dados e analytics. Atuo em todas as etapas do ciclo de vida de projetos de dados, desde o levantamento de requisitos com stakeholders até a entrega de soluções robustas.",
+      "Minha especialidade está em fazer diagnósticos precisos dos desafios de negócio e traduzir isso em arquiteturas de dados escaláveis, sejam em cloud (AWS, Azure) ou on-premise. Desenho soluções completas de BI e analytics adaptadas às necessidades específicas de cada cliente.",
+      "Com foco em entrega de valor, construo pipelines de dados eficientes, implemento boas práticas de engenharia e garanto que as soluções sejam sustentáveis e escaláveis a longo prazo."
+    ],
+    "highlights_title": "O que eu faço:",
+    "highlights": [
+      "Levantamento de requisitos e diagnóstico de problemas de dados",
+      "Arquitetura e design de soluções de BI em Cloud e On-Premise",
+      "Desenvolvimento de pipelines de dados em tempo real e batch",
+      "Implementação de Data Lakes, Data Warehouses e Lakehouse",
+      "Consultoria em estratégia de dados e governança",
+      "Otimização de processos ETL/ELT e queries SQL"
+    ],
+    "stats": {
+      "experience": {
+        "value": "4+",
+        "label": "Anos de Experiência"
+      },
+      "projects": {
+        "value": "50+",
+        "label": "Projetos Entregues"
+      },
+      "technologies": {
+        "value": "10+",
+        "label": "Tecnologias Dominadas"
+      },
+      "certifications": {
+        "value": "4",
+        "label": "Certificações"
+      }
     }
   },
   "projects": {

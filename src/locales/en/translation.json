@@ -56,20 +56,38 @@
     }
   },
   "about": {
-    "title": "About",
-    "cards": {
-        "default": {
-            "title": "Card Default",
-            "text": "Subtle background with backdrop blur"
-        },
-        "elevated": {
-            "title": "Card Elevated",
-            "text": "With shadow and hover effect"
-        },
-        "outlined": {
-            "title": "Card Outlined",
-            "text": "Animated border on hover"
-        }
+    "title": "About Me",
+    "description": [
+      "I'm a professional passionate about solving complex problems through pragmatic data and analytics solutions. I work across the entire data project lifecycle, from requirements gathering with stakeholders to delivering robust solutions.",
+      "My expertise lies in accurately diagnosing business challenges and translating them into scalable data architectures, whether in cloud (AWS, Azure) or on-premise environments. I design complete BI and analytics solutions tailored to each client's specific needs.",
+      "With a focus on value delivery, I build efficient data pipelines, implement engineering best practices, and ensure solutions are sustainable and scalable for the long term."
+    ],
+    "highlights_title": "What I do:",
+    "highlights": [
+      "Requirements gathering and data problem diagnostics",
+      "Architecture and design of BI solutions in Cloud and On-Premise",
+      "Development of real-time and batch data pipelines",
+      "Implementation of Data Lakes, Data Warehouses, and Lakehouse",
+      "Consulting on data strategy and governance",
+      "Optimization of ETL/ELT processes and SQL queries"
+    ],
+    "stats": {
+      "experience": {
+        "value": "4+",
+        "label": "Years of Experience"
+      },
+      "projects": {
+        "value": "50+",
+        "label": "Delivered Projects"
+      },
+      "technologies": {
+        "value": "10+",
+        "label": "Mastered Technologies"
+      },
+      "certifications": {
+        "value": "4",
+        "label": "Certifications"
+      }
     }
   },
   "projects": {

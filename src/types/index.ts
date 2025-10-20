@@ -2,4 +2,4 @@
 export * from './hero.types';
 export * from './common.types';
 export * from './skills.types';
-export * from './certifications.types.ts';
+export * from './about.types';

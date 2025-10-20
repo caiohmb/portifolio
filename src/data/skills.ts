@@ -4,7 +4,8 @@ import type { SkillsData } from '@/types';
 export const skillsData = {
   categories: [
     {
-      name: "Linguagens & Frameworks",
+      key: "languages_frameworks",
+      title: "Linguagens & Frameworks",
       icon: "💻",
       skills: [
         { name: "Python", icon: "🐍" },
@@ -15,7 +16,8 @@ export const skillsData = {
       ]
     },
     {
-      name: "Cloud & Infraestrutura",
+      key: "cloud_infrastructure",
+      title: "Cloud & Infraestrutura",
       icon: "☁️",
       skills: [
         { name: "AWS", icon: "☁️" },
@@ -26,7 +28,8 @@ export const skillsData = {
       ]
     },
     {
-      name: "Orquestração & ETL",
+      key: "orchestration_etl",
+      title: "Orquestração & ETL",
       icon: "🔄",
       skills: [
         { name: "Apache Airflow", icon: "🌬️" },
@@ -36,7 +39,8 @@ export const skillsData = {
       ]
     },
     {
-      name: "Dados & Armazenamento",
+      key: "data_storage",
+      title: "Dados & Armazenamento",
       icon: "🗄️",
       skills: [
         { name: "PostgreSQL", icon: "🐘" },
@@ -48,7 +52,8 @@ export const skillsData = {
       ]
     },
     {
-      name: "Engenharia & Arquitetura",
+      key: "engineering_architecture",
+      title: "Engenharia & Arquitetura",
       icon: "🏗️",
       skills: [
         { name: "Arquitetura de Dados", icon: "📐" },
@@ -59,7 +64,8 @@ export const skillsData = {
       ]
     },
     {
-      name: "DevOps & CI/CD",
+      key: "devops_cicd",
+      title: "DevOps & CI/CD",
       icon: "🚀",
       skills: [
         { name: "Git", icon: "📝" },
@@ -69,7 +75,8 @@ export const skillsData = {
       ]
     },
     {
-      name: "Análise & BI",
+      key: "analysis_bi",
+      title: "Análise & BI",
       icon: "📈",
       skills: [
         { name: "Power BI", icon: "📊" },
@@ -79,7 +86,8 @@ export const skillsData = {
       ]
     },
     {
-      name: "Governança & Qualidade",
+      key: "governance_quality",
+      title: "Governança & Qualidade",
       icon: "🛡️",
       skills: [
         { name: "Data Quality", icon: "✅" },

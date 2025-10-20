@@ -8,6 +8,7 @@ export interface Skill {
 
 export interface SkillCategory {
   key: string;
+  title: string;
   icon: string;
   skills: Skill[];
 }
