@@ -1,31 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
+  /* Base styles for light mode */
   :root {
-    /* Light Mode Colors */
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
-    --accent-primary: #0ea5e9;
-    --accent-secondary: #8b5cf6;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
+    --color-bg-primary: 255 255 255;
+    --color-bg-secondary: 248 250 252;
+    --color-accent-primary: 14 165 233;
+    --color-accent-secondary: 139 92 246;
+    --color-text-primary: 15 23 42;
+    --color-text-secondary: 71 85 105;
   }
 
+  /* Dark mode overrides */
   .dark {
-    /* Dark Mode Colors */
-    --bg-primary: #0a0e27;
-    --bg-secondary: #151b3d;
-    --accent-primary: #00d4ff;
-    --accent-secondary: #7c3aed;
-    --text-primary: #e2e8f0;
-    --text-secondary: #94a3b8;
+    --color-bg-primary: 2 6 23;
+    --color-bg-secondary: 15 23 42;
+    --color-accent-primary: 34 211 238;
+    --color-accent-secondary: 168 85 247;
+    --color-text-primary: 226 232 240;
+    --color-text-secondary: 148 163 184;
   }
 
   body {
-    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased;
+    background-color: rgb(var(--color-bg-primary));
+    color: rgb(var(--color-text-primary));
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   html {
@@ -38,28 +39,40 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-[var(--bg-secondary)];
+    background: rgb(var(--color-bg-secondary));
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-[var(--accent-primary)] rounded-full;
+    background: rgb(var(--color-accent-primary));
+    border-radius: 9999px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-[var(--accent-secondary)];
+    background: rgb(var(--color-accent-secondary));
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] bg-clip-text text-transparent;
+    background: linear-gradient(to right, rgb(var(--color-accent-primary)), rgb(var(--color-accent-secondary)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
-  .glow-primary {
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  .bg-primary {
+    background-color: rgb(var(--color-bg-primary));
   }
 
-  .glow-secondary {
-    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  .bg-secondary {
+    background-color: rgb(var(--color-bg-secondary));
+  }
+
+  .text-primary {
+    color: rgb(var(--color-text-primary));
+  }
+
+  .text-secondary {
+    color: rgb(var(--color-text-secondary));
   }
 }

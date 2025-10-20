@@ -6,6 +6,15 @@ export interface Technology {
   color: string;
 }
 
+export interface Certification {
+  name: string;
+  icon?: string;
+  issuer?: string;
+  year?: number;
+  badgeUrl?: string;
+  verifyUrl?: string;
+}
+
 export interface CTAButton {
   text: string;
   action: string;
@@ -17,6 +26,7 @@ export interface HeroData {
   title: string;
   tagline: string[];
   mainTechnologies: Technology[];
+  certifications: Certification[];
   cta: {
     primary: CTAButton;
     secondary: CTAButton;

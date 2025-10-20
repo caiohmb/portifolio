@@ -27,3 +27,10 @@ export interface NavItem {
   href: string;
   icon?: string;
 }
+
+export interface GlitchEffectProps {
+  text: string;
+  className?: string;
+  triggerOnHover?: boolean;
+  autoPlay?: boolean;
+}

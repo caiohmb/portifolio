@@ -1,50 +1,119 @@
-/* Glitch Effect */
-@keyframes glitch {
-  0% {
+/* Glitch Effect - Fast and Impactful */
+@keyframes glitch-flash {
+  0%, 100% {
     transform: translate(0);
+    opacity: 1;
+  }
+  10% {
+    transform: translate(-5px, 2px);
+    opacity: 0.8;
   }
   20% {
-    transform: translate(-2px, 2px);
+    transform: translate(5px, -2px);
+    opacity: 1;
+  }
+  30% {
+    transform: translate(-3px, 3px);
+    opacity: 0.9;
   }
   40% {
+    transform: translate(3px, -3px);
+    opacity: 1;
+  }
+  50% {
     transform: translate(-2px, -2px);
+    opacity: 0.85;
   }
   60% {
     transform: translate(2px, 2px);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-1px, 1px);
+    opacity: 0.9;
   }
   80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
+    transform: translate(1px, -1px);
+    opacity: 1;
   }
 }
 
-.glitch {
+@keyframes glitch-clip-flash {
+  0%, 100% {
+    clip-path: inset(0 0 0 0);
+  }
+  10% {
+    clip-path: inset(10% 0 80% 0);
+  }
+  20% {
+    clip-path: inset(80% 0 10% 0);
+  }
+  30% {
+    clip-path: inset(30% 0 60% 0);
+  }
+  40% {
+    clip-path: inset(60% 0 20% 0);
+  }
+  50% {
+    clip-path: inset(20% 0 70% 0);
+  }
+  60% {
+    clip-path: inset(70% 0 5% 0);
+  }
+  70% {
+    clip-path: inset(5% 0 85% 0);
+  }
+  80% {
+    clip-path: inset(50% 0 40% 0);
+  }
+  90% {
+    clip-path: inset(15% 0 75% 0);
+  }
+}
+
+.glitch-wrapper {
   position: relative;
   display: inline-block;
+  cursor: default;
 }
 
-.glitch:hover::before,
-.glitch:hover::after {
+.glitch-text {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.1s ease;
+}
+
+.glitch-text.glitching::before,
+.glitch-text.glitching::after {
   content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background: transparent;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+  pointer-events: none;
 }
 
-.glitch:hover::before {
-  left: 2px;
-  text-shadow: -2px 0 var(--accent-primary);
-  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+.glitch-text.glitching::before {
+  color: #00d4ff;
+  text-shadow: 0 0 8px #00d4ff, 0 0 12px #00d4ff;
+  animation: glitch-flash 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards,
+             glitch-clip-flash 0.3s steps(4) forwards;
+  mix-blend-mode: screen;
+  z-index: -1;
 }
 
-.glitch:hover::after {
-  left: -2px;
-  text-shadow: 2px 0 var(--accent-secondary);
-  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+.glitch-text.glitching::after {
+  color: #7c3aed;
+  text-shadow: 0 0 8px #7c3aed, 0 0 12px #7c3aed;
+  animation: glitch-flash 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) reverse forwards,
+             glitch-clip-flash 0.25s steps(4) reverse forwards;
+  mix-blend-mode: screen;
+  z-index: -1;
 }
 
 /* Cursor Blink */
