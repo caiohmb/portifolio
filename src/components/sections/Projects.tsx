@@ -151,7 +151,7 @@ export const Projects = () => {
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/20 via-purple-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"></div>
 
                 {/* Card */}
-                <div className="relative h-full bg-gradient-to-br from-white/[0.07] to-white/[0.02] backdrop-blur-xl rounded-2xl p-6 border border-white/10 group-hover:border-accent/40 transition-all duration-500 shadow-xl group-hover:shadow-2xl group-hover:shadow-accent/10 overflow-hidden">
+                <div className="relative h-full bg-gradient-to-br from-white/[0.07] to-white/[0.02] backdrop-blur-xl rounded-2xl p-6 border border-white/10 group-hover:border-accent/40 transition-all duration-500 shadow-xl group-hover:shadow-2xl group-hover:shadow-accent/10 overflow-hidden text-gray-800 dark:text-gray-100">
                   {/* Shimmer effect */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>

@@ -56,13 +56,14 @@ export const skillsData = {
       ]
     },
     {
-      key: "analytics_bi",
+      key: "program_languages",
       title: "Analytics & BI",
-      icon: "📊",
+      icon: "",
       skills: [
-        { name: "Power BI", icon: "📊" },
-        { name: "Tableau", icon: "📉" },
-        { name: "Looker", icon: "👁️" },
+        { name: "Python"},
+        { name: "SQL"},
+        { name: "Go" },
+        { name: "C#"},
       ]
     },
     {
@@ -93,13 +94,9 @@ export const skillsData = {
     },
     {
       key: "software_devops",
-      title: "Linguagens & Engenharia de Software",
+      title: "Engenharia de Software",
       icon: "💻",
       skills: [
-        { name: "Python", icon: "🐍" },
-        { name: "SQL", icon: "📊" },
-        { name: "Go", icon: "🔵" },
-        { name: "C#", icon: "🟣" },
         { name: "FastAPI", icon: "⚡" },
         { name: ".NET", icon: "🟣" },
         { name: "APIs REST", icon: "🔌" },

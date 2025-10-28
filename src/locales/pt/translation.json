@@ -23,17 +23,17 @@
     "contact": "Contato"
   },
   "skills": {
-    "title": "Skills & Competências",
+    "title": "Habilidades Tecnicas",
     "subtitle": "Tecnologias e habilidades que domino na área de engenharia de dados",
     "categories": {
       "data_platforms": "Plataformas de Dados",
       "processing_orchestration": "Processamento, Streaming & Orquestração",
       "databases_storage": "Databases & Storage",
       "cloud_infrastructure": "Cloud & Infraestrutura",
-      "analytics_bi": "Analytics & BI",
+      "program_languages": "Linguagens de Programação",
       "governance_quality": "Governança & Qualidade",
       "ai_ml": "IA & Machine Learning",
-      "software_devops": "Linguagens & Engenharia de Software"
+      "software_devops": "Engenharia de Software"
     }
   },
   "certifications": {

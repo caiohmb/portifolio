@@ -23,17 +23,17 @@
     "contact": "Contact"
   },
   "skills": {
-    "title": "Skills & Competencies",
+    "title": "Tech Stack",
     "subtitle": "Technologies and skills I master in the data engineering field",
     "categories": {
       "data_platforms": "Data Platforms",
       "processing_orchestration": "Processing, Streaming & Orchestration",
       "databases_storage": "Databases & Storage",
       "cloud_infrastructure": "Cloud & Infrastructure",
-      "analytics_bi": "Analytics & BI",
+      "program_languages": "Programming Languages",
       "governance_quality": "Governance & Quality",
       "ai_ml": "AI & Machine Learning",
-      "software_devops": "Languages & Software Engineering"
+      "software_devops": "Software Engineering"
     }
   },
   "certifications": {

@@ -107,9 +107,6 @@ export const About: React.FC = () => {
                                bg-secondary/40 border-cyan-500/20 hover:border-cyan-500/60 hover:bg-secondary/60
                                hover:shadow-xl hover:shadow-cyan-500/30 text-center"
                   >
-                    <div className="text-5xl mb-4 filter drop-shadow-lg group-hover:scale-110 transition-transform">
-                      {stat.icon}
-                    </div>
                     <div className="text-4xl font-bold text-gradient mb-2">
                       {stat.value}
                     </div>

@@ -53,7 +53,6 @@ export const Skills: React.FC = () => {
                            hover:shadow-xl hover:shadow-cyan-500/20"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl filter drop-shadow-lg">{category.icon}</span>
                   <h3 className="text-lg font-bold text-primary group-hover:text-cyan-400 transition-colors">
                     {t(`skills.categories.${category.key}`)}
                   </h3>
@@ -71,7 +70,6 @@ export const Skills: React.FC = () => {
                                  bg-primary/30 hover:bg-primary/50 transition-colors
                                  border border-transparent hover:border-cyan-500/30"
                     >
-                      <span className="text-lg">{skill.icon}</span>
                       <span className="text-sm font-medium text-secondary group-hover:text-primary transition-colors">
                         {skill.name}
                       </span>
