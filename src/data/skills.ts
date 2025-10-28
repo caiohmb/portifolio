@@ -50,6 +50,7 @@ export const skillsData = {
       skills: [
         { name: "AWS", icon: "☁️" },
         { name: "Azure", icon: "🌐" },
+        { name: "GCP", icon: "📡" },
         { name: "Docker", icon: "🐳" },
         { name: "Kubernetes", icon: "⚓" },
         { name: "Terraform", icon: "🏗️" },
