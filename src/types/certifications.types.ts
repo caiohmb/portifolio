@@ -1,4 +1,4 @@
-export interface Certification {
+export interface CertificationItem {
   nameKey: string;
   icon?: string;
   year?: number;
@@ -7,5 +7,5 @@ export interface Certification {
 }
 
 export interface CertificationsData {
-  certifications: Certification[];
+  certifications: CertificationItem[];
 }

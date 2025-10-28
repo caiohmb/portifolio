@@ -1,6 +1,6 @@
-import type { Certification } from '@/types';
+import type { CertificationItem } from '@/types';
 
-export const certificationsData: Certification[] = [
+export const certificationsData: CertificationItem[] = [
     {
       nameKey: "airflow_fundamentals",
       icon: "🌬️",
