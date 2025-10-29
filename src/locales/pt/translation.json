@@ -17,8 +17,9 @@
   },
   "navigation": {
     "home": "Início",
-    "certifications": "Certificações",
+    "about": "Sobre",
     "skills": "Skills",
+    "certifications": "Certificações",
     "projects": "Projetos",
     "contact": "Contato"
   },

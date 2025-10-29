@@ -31,16 +31,8 @@ export const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden bg-secondary"
     >
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary via-secondary/50 to-primary -z-10" />
-
-      {/* Decorative Elements */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-violet-500/10 rounded-full blur-3xl" />
-      </div>
 
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
@@ -52,8 +44,8 @@ export const About: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <User className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient">
+            <User className="w-8 h-8 text-accent" />
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary">
               {t('about.title')}
             </h2>
           </div>
@@ -103,17 +95,15 @@ export const About: React.FC = () => {
                   className="group"
                 >
                   <div
-                    className="h-full p-6 rounded-2xl backdrop-blur-md border transition-all duration-300
-                               bg-secondary/40 border-cyan-500/20 hover:border-cyan-500/60 hover:bg-secondary/60
-                               hover:shadow-xl hover:shadow-cyan-500/30 text-center"
+                    className="h-full p-6 rounded-2xl backdrop-blur-sm border transition-all duration-300
+                               bg-secondary/50 border-default hover:border-accent/50 hover:bg-secondary/70 text-center shadow-md hover:shadow-xl hover:-translate-y-2"
                   >
-                    <div className="text-4xl font-bold text-gradient mb-2">
+                    <div className="text-4xl font-bold text-primary mb-2">
                       {stat.value}
                     </div>
                     <div className="text-sm text-secondary group-hover:text-primary transition-colors">
                       {stat.label}
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
                   </div>
                 </motion.div>
               ))}
@@ -143,10 +133,9 @@ export const About: React.FC = () => {
                   className="group"
                 >
                   <div className="h-full p-4 rounded-xl backdrop-blur-sm border transition-all duration-300
-                                  bg-secondary/30 border-cyan-500/10 hover:border-cyan-500/40 hover:bg-secondary/50
-                                  hover:shadow-lg hover:shadow-cyan-500/10">
+                                  bg-secondary/30 border-default hover:border-accent/40 hover:bg-secondary/50 shadow-sm hover:shadow-lg hover:-translate-y-1">
                     <div className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                      <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 group-hover:scale-110 transition-transform" />
                       <span className="text-sm text-secondary group-hover:text-primary transition-colors leading-relaxed">
                         {highlight}
                       </span>

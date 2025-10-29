@@ -2,27 +2,33 @@ import { useTranslation } from 'react-i18next';
 import { Button, Card } from '@/components/common';
 import { Header } from '@/components/layout';
 import { Hero, Certifications, Skills, About, Projects } from '@/components/sections';
+import { DotsBackground } from '@/components/animations';
 
 function App() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-primary transition-colors duration-300">
-      <Header />
+    <div className="relative min-h-screen bg-primary transition-colors duration-300">
+      {/* Background de dots para todo o site */}
+      <DotsBackground />
+
+      {/* Conteúdo do site */}
+      <div className="relative z-10">
+        <Header />
 
       <Hero />
 
-      <Certifications />
+      <About />
 
       <Skills />
 
-      <About />
+      <Certifications />
 
       <Projects />
 
-      <section id="contact" className="min-h-screen flex items-center justify-center py-20">
+      <section id="contact" className="min-h-screen flex items-center justify-center py-20 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-gradient mb-8">{t('contact.title')}</h2>
+          <h2 className="text-4xl font-bold text-primary mb-8">{t('contact.title')}</h2>
           <Card variant="outlined" className="max-w-2xl mx-auto">
             <p className="text-secondary text-lg">
               {t('contact.subtitle')}
@@ -34,6 +40,7 @@ function App() {
           </Card>
         </div>
       </section>
+      </div>
     </div>
   )
 }

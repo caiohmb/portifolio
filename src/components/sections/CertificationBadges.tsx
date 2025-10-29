@@ -48,7 +48,7 @@ export const CertificationBadges: React.FC<CertificationBadgesProps> = ({
             <div
               className="relative p-4 rounded-xl backdrop-blur-sm border transition-all duration-300
                          bg-secondary/40 border-cyan-500/20 hover:border-cyan-500/60 hover:bg-secondary/60
-                         hover:shadow-xl hover:shadow-cyan-500/30 cursor-pointer overflow-hidden
+                         cursor-pointer overflow-hidden
                          w-32 h-32 md:w-40 md:h-40 flex items-center justify-center"
             >
               {/* Badge Image */}
@@ -65,7 +65,7 @@ export const CertificationBadges: React.FC<CertificationBadgesProps> = ({
               ) : (
                 <div className="flex flex-col items-center justify-center gap-2 px-2">
                   {cert.icon && (
-                    <div className="text-5xl md:text-6xl filter drop-shadow-lg">
+                    <div className="text-5xl md:text-6xl">
                       {cert.icon}
                     </div>
                   )}

@@ -9,14 +9,8 @@ export const Certifications: React.FC = () => {
   return (
     <section
       id="certifications"
-      className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden bg-secondary"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-primary via-secondary/50 to-primary -z-10" />
-
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl" />
-      </div>
 
       <div className="relative z-10 container mx-auto px-4">
         <motion.div
@@ -27,8 +21,8 @@ export const Certifications: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Award className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient">
+            <Award className="w-8 h-8 text-accent" />
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary">
               {t('certifications.title')}
             </h2>
           </div>
@@ -55,9 +49,8 @@ export const Certifications: React.FC = () => {
                 className="block"
               >
                 <div
-                  className="relative p-6 rounded-2xl backdrop-blur-md border transition-all duration-300
-                             bg-secondary/40 border-cyan-500/20 hover:border-cyan-500/60 hover:bg-secondary/60
-                             hover:shadow-2xl hover:shadow-cyan-500/30 overflow-hidden h-full"
+                  className="relative p-6 rounded-2xl backdrop-blur-sm border transition-all duration-300
+                             bg-primary/50 border-default hover:border-accent/50 hover:bg-primary/70 overflow-hidden h-full shadow-md hover:shadow-xl hover:-translate-y-2"
                 >
                   {cert.verifyUrl && (
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-20">
@@ -78,7 +71,7 @@ export const Certifications: React.FC = () => {
                     ) : (
                       <div className="flex flex-col items-center justify-center gap-3">
                         {cert.icon && (
-                          <div className="text-7xl filter drop-shadow-lg">
+                          <div className="text-7xl">
                             {cert.icon}
                           </div>
                         )}
@@ -87,7 +80,7 @@ export const Certifications: React.FC = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-lg font-bold text-primary group-hover:text-cyan-400 transition-colors">
+                    <h3 className="text-lg font-bold text-primary group-hover:text-accent transition-colors">
                       {t(`certifications.${cert.nameKey}.name`)}
                     </h3>
                     <p className="text-sm text-secondary">
@@ -95,14 +88,13 @@ export const Certifications: React.FC = () => {
                     </p>
                     {cert.year && (
                       <div className="flex items-center gap-2">
-                        <span className="text-xs px-2 py-1 rounded-full bg-cyan-500/20 text-cyan-400 font-semibold">
+                        <span className="text-xs px-2 py-1 rounded-full bg-accent/20 text-accent font-semibold">
                           {cert.year}
                         </span>
                       </div>
                     )}
                   </div>
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
                 </div>
               </a>
             </motion.div>

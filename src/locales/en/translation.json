@@ -17,8 +17,9 @@
   },
   "navigation": {
     "home": "Home",
-    "certifications": "Certifications",
+    "about": "About",
     "skills": "Skills",
+    "certifications": "Certifications",
     "projects": "Projects",
     "contact": "Contact"
   },

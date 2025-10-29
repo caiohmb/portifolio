@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/common';
-import { ParticleBackground, TypeWriter, ScrollIndicator, GlitchEffect } from '@/components/animations';
+import { TypeWriter, ScrollIndicator, GlitchEffect } from '@/components/animations';
+import { Linkedin, Github, Mail, FileDown, MessageSquare } from 'lucide-react';
 
 
 export const Hero: React.FC = () => {
@@ -18,21 +19,30 @@ export const Hero: React.FC = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const copyEmail = async () => {
+    const email = 'seu.email@exemplo.com'; // TODO: Substituir pelo seu email
+    await navigator.clipboard.writeText(email);
+    alert('Email copiado para área de transferência!');
+  };
+
+  const socialLinks = {
+    linkedin: 'https://www.linkedin.com/in/seu-perfil', // TODO: Substituir
+    github: 'https://github.com/caiohmb',
+    cv: '/caminho/para/seu-cv.pdf', // TODO: Adicionar CV
+  };
+
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary"
     >
-      <ParticleBackground />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary/30 -z-[5]" />
-
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="text-center space-y-6 md:space-y-8">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-lg md:text-xl text-cyan-400"
+            className="text-lg md:text-xl text-accent"
           >
             {t('hero.greeting')}
           </motion.p>
@@ -43,7 +53,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold"
           >
-            <GlitchEffect text={t('hero.name')} className="text-gradient" />
+            <GlitchEffect text={t('hero.name')} className="text-primary" />
           </motion.h1>
 
           <motion.h2
@@ -53,9 +63,9 @@ export const Hero: React.FC = () => {
             className="text-2xl md:text-4xl lg:text-5xl font-semibold text-primary"
           >
             <span className="inline-block">
-              <span className="text-cyan-500">&gt;&gt;&gt;</span>{' '}
+              <span className="text-accent">&gt;&gt;&gt;</span>{' '}
               {t('hero.title')}{' '}
-              <span className="text-cyan-500">&lt;&lt;&lt;</span>
+              <span className="text-accent">&lt;&lt;&lt;</span>
             </span>
           </motion.h2>
 
@@ -80,6 +90,89 @@ export const Hero: React.FC = () => {
             <Button variant="outline" size="lg" onClick={scrollToContact}>
               {t('hero.cta_secondary')}
             </Button>
+          </motion.div>
+
+          {/* Social Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+            className="flex items-center justify-center gap-4 pt-8"
+          >
+            {/* LinkedIn */}
+            <motion.a
+              href={socialLinks.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1, y: -5 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-300"
+            >
+              <Linkedin className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors" />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-gray-800 dark:bg-gray-100 backdrop-blur-sm text-white dark:text-gray-800 text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none shadow-md">
+                LinkedIn
+                <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 dark:bg-gray-100 rotate-45"></span>
+              </span>
+            </motion.a>
+
+            {/* GitHub */}
+            <motion.a
+              href={socialLinks.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1, y: -5 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-300"
+            >
+              <Github className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors" />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-gray-800 dark:bg-gray-100 backdrop-blur-sm text-white dark:text-gray-800 text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none shadow-md">
+                GitHub
+                <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 dark:bg-gray-100 rotate-45"></span>
+              </span>
+            </motion.a>
+
+            {/* Email (copia para clipboard) */}
+            <motion.button
+              onClick={copyEmail}
+              whileHover={{ scale: 1.1, y: -5 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-300"
+            >
+              <Mail className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors" />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-gray-800 dark:bg-gray-100 backdrop-blur-sm text-white dark:text-gray-800 text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none shadow-md">
+                Copiar Email
+                <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 dark:bg-gray-100 rotate-45"></span>
+              </span>
+            </motion.button>
+
+            {/* Download CV */}
+            <motion.a
+              href={socialLinks.cv}
+              download
+              whileHover={{ scale: 1.1, y: -5 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-300"
+            >
+              <FileDown className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors" />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-gray-800 dark:bg-gray-100 backdrop-blur-sm text-white dark:text-gray-800 text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none shadow-md">
+                Baixar CV
+                <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 dark:bg-gray-100 rotate-45"></span>
+              </span>
+            </motion.a>
+
+            {/* Mensagem (scroll to contact) */}
+            <motion.button
+              onClick={scrollToContact}
+              whileHover={{ scale: 1.1, y: -5 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-300"
+            >
+              <MessageSquare className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors" />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-gray-800 dark:bg-gray-100 backdrop-blur-sm text-white dark:text-gray-800 text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none shadow-md">
+                Contato
+                <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 dark:bg-gray-100 rotate-45"></span>
+              </span>
+            </motion.button>
           </motion.div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { ThemeToggle, LanguageSwitcher } from '@/components/common';
 import { NavLink } from './NavLink';
 import { useScrollPosition } from '@/hooks';
 
-const navigationKeys = ['home', 'certifications', 'skills', 'projects', 'contact'];
+const navigationKeys = ['home', 'about', 'skills', 'certifications', 'projects', 'contact'];
 
 export const Header: React.FC = () => {
   const { t } = useTranslation();
@@ -47,7 +47,7 @@ export const Header: React.FC = () => {
           transition-all duration-300 ease-in-out
           ${isScrolled ? 'py-3' : 'py-4'}
           ${isScrolled &&
-            'bg-secondary/50 backdrop-blur-lg shadow-md shadow-black/5 border-b border-cyan-500/10'
+            'bg-secondary/80 backdrop-blur-xl shadow-lg border-b border-accent/10'
           }
         `}
       >
@@ -59,7 +59,7 @@ export const Header: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-xl font-bold"
             >
-              <span className="text-gradient">Data Engineer</span>
+              <span className="text-accent">Data Engineer</span>
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -100,7 +100,7 @@ export const Header: React.FC = () => {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden p-2 text-primary hover:text-gradient transition-colors"
+                className="md:hidden p-2 text-primary hover:text-accent transition-colors"
                 aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -141,9 +141,10 @@ export const Header: React.FC = () => {
                     className={`
                       text-2xl font-semibold
                       transition-all duration-300
+                      px-6 py-3 rounded-xl inline-block
                       ${activeSection === key
-                        ? 'text-gradient'
-                        : 'text-primary hover:text-gradient'
+                        ? 'text-accent bg-accent/10 shadow-md'
+                        : 'text-primary hover:text-accent hover:bg-accent/5 hover:shadow-sm hover:scale-105'
                       }
                     `}
                   >

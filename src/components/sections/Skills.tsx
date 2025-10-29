@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Code2 } from 'lucide-react';
 import { skillsData } from '@/data/skills';
+import { Badge } from '@/components/common';
 
 export const Skills: React.FC = () => {
   const { t } = useTranslation();
@@ -9,14 +10,8 @@ export const Skills: React.FC = () => {
   return (
     <section
       id="skills"
-      className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden bg-primary"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-primary via-secondary/30 to-primary -z-10" />
-
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-40 right-20 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-40 left-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl" />
-      </div>
 
       <div className="relative z-10 container mx-auto px-4">
         <motion.div
@@ -27,8 +22,8 @@ export const Skills: React.FC = () => {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Code2 className="w-8 h-8 text-cyan-400" />
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient">
+            <Code2 className="w-8 h-8 text-accent" />
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary">
               {t('skills.title')}
             </h2>
           </div>
@@ -48,31 +43,27 @@ export const Skills: React.FC = () => {
               className="group"
             >
               <div
-                className="h-full p-6 rounded-2xl backdrop-blur-md border transition-all duration-300
-                           bg-secondary/40 border-cyan-500/20 hover:border-cyan-500/60 hover:bg-secondary/60
-                           hover:shadow-xl hover:shadow-cyan-500/20"
+                className="h-full p-6 rounded-2xl backdrop-blur-sm border transition-all duration-300
+                           bg-primary/50 border-default hover:border-accent/50 hover:bg-primary/70 shadow-md hover:shadow-xl hover:-translate-y-2"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <h3 className="text-lg font-bold text-primary group-hover:text-cyan-400 transition-colors">
+                  <h3 className="text-lg font-bold text-primary group-hover:text-accent transition-colors">
                     {t(`skills.categories.${category.key}`)}
                   </h3>
                 </div>
 
-                <div className="space-y-2">
+                <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
                     <motion.div
                       key={skill.name}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: categoryIndex * 0.1 + skillIndex * 0.05, duration: 0.3 }}
-                      className="flex items-center gap-2 px-3 py-2 rounded-lg
-                                 bg-primary/30 hover:bg-primary/50 transition-colors
-                                 border border-transparent hover:border-cyan-500/30"
                     >
-                      <span className="text-sm font-medium text-secondary group-hover:text-primary transition-colors">
+                      <Badge size="md">
                         {skill.name}
-                      </span>
+                      </Badge>
                     </motion.div>
                   ))}
                 </div>

@@ -14,7 +14,6 @@ export const TechBadges: React.FC<TechBadgesProps> = ({ technologies, delay = 0 
                      bg-secondary/50 backdrop-blur-sm
                      border border-cyan-500/30
                      hover:border-cyan-500 hover:bg-secondary/70
-                     hover:shadow-lg hover:shadow-cyan-500/30
                      transition-all duration-300 cursor-default"
         >
           <span className="mr-2 text-lg">{tech.icon}</span>

@@ -27,17 +27,18 @@ export const NavLink: React.FC<NavLinkProps> = ({
       href={href}
       onClick={handleClick}
       className={`
-        relative px-2 py-1.5 text-sm font-medium
+        relative px-3 py-2 text-sm font-medium block
         transition-all duration-300
 
-        ${isActive ? 'text-gradient' : 'text-primary hover:text-gradient'}
+        before:absolute before:bottom-0 before:left-0 before:right-0
+        before:h-[2px] before:bg-accent before:rounded-full
+        before:transition-all before:duration-300
+        ${isActive ? 'before:opacity-100' : 'before:opacity-0 hover:before:opacity-100'}
 
-        after:absolute after:bottom-0 after:left-0
-        after:h-0.5
-        after:bg-gradient-to-r after:from-cyan-500 after:to-violet-600
-        after:transition-all after:duration-300
-
-        ${isActive ? 'after:w-full' : 'after:w-0 hover:after:w-full'}
+        ${isActive
+          ? 'text-accent translate-y-[-2px]'
+          : 'text-secondary hover:text-accent hover:translate-y-[-2px]'
+        }
       `}
     >
       {label}

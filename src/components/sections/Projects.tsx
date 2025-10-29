@@ -57,13 +57,7 @@ export const Projects = () => {
   };
 
   return (
-    <section id="projects" className="min-h-screen py-20 bg-gradient-to-b from-transparent via-secondary/20 to-secondary/30 relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-      </div>
-
+    <section id="projects" className="min-h-screen py-20 bg-primary relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -81,7 +75,7 @@ export const Projects = () => {
           >
             <Code2 className="w-16 h-16 text-accent mx-auto" />
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             {t('projects.title')}
           </h2>
           <p className="text-xl text-secondary max-w-2xl mx-auto">
@@ -147,14 +141,11 @@ export const Projects = () => {
                 }}
                 className="group relative h-full"
               >
-                {/* Glow effect on hover */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/20 via-purple-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"></div>
-
                 {/* Card */}
-                <div className="relative h-full bg-gradient-to-br from-white/[0.07] to-white/[0.02] backdrop-blur-xl rounded-2xl p-6 border border-white/10 group-hover:border-accent/40 transition-all duration-500 shadow-xl group-hover:shadow-2xl group-hover:shadow-accent/10 overflow-hidden text-gray-800 dark:text-gray-100">
+                <div className="relative h-full bg-primary/70 backdrop-blur-sm rounded-2xl p-6 border border-default group-hover:border-accent/50 transition-all duration-500 overflow-hidden shadow-md hover:shadow-xl group-hover:-translate-y-2">
                   {/* Shimmer effect */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/5 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
                   </div>
 
                   {/* Language Badge with glow */}
@@ -164,7 +155,6 @@ export const Projects = () => {
                         whileHover={{ scale: 1.1 }}
                         className="relative"
                       >
-                        <div className="absolute inset-0 bg-accent/30 blur-md rounded-full"></div>
                         <div className="relative px-3 py-1 bg-accent/20 backdrop-blur-sm rounded-full text-xs font-semibold text-accent border border-accent/30">
                           {project.language}
                         </div>
@@ -172,8 +162,6 @@ export const Projects = () => {
                     </div>
                   )}
 
-                  {/* Decorative corner element */}
-                  <div className="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-accent/10 to-transparent rounded-br-full opacity-50"></div>
 
                   {/* Content */}
                   <div className="relative z-10 flex flex-col h-full">
@@ -186,12 +174,18 @@ export const Projects = () => {
                         >
                           <Sparkles className="w-5 h-5 text-accent" />
                         </motion.div>
-                        <h3 className="text-xl font-bold text-white group-hover:text-accent transition-colors duration-300 leading-tight">
+                        <h3
+                          className="text-xl font-bold group-hover:text-accent transition-colors duration-300 leading-tight"
+                          style={{ color: 'var(--color-text-primary, #0f172a)' }}
+                        >
                           {project.title}
                         </h3>
                       </div>
 
-                      <p className="text-gray-300 text-sm leading-relaxed line-clamp-3 mb-4">
+                      <p
+                        className="text-sm leading-relaxed line-clamp-3 mb-4 font-medium"
+                        style={{ color: 'var(--color-text-primary, #1e293b)' }}
+                      >
                         {project.description}
                       </p>
 
@@ -205,13 +199,13 @@ export const Projects = () => {
                               whileInView={{ opacity: 1, scale: 1 }}
                               transition={{ delay: index * 0.1 + tagIndex * 0.05 }}
                               whileHover={{ scale: 1.05, y: -2 }}
-                              className="px-2.5 py-1 bg-white/5 backdrop-blur-sm rounded-lg text-xs text-gray-400 border border-white/10 hover:border-accent/30 hover:text-accent transition-all duration-200 cursor-default"
+                              className="px-2.5 py-1 bg-white/5 backdrop-blur-sm rounded-lg text-xs text-gray-600 dark:text-gray-400 border border-white/10 hover:border-accent/30 hover:text-accent transition-all duration-200 cursor-default"
                             >
                               #{tag}
                             </motion.span>
                           ))}
                           {project.tags.length > 3 && (
-                            <span className="px-2.5 py-1 bg-white/5 rounded-lg text-xs text-gray-500 border border-white/10">
+                            <span className="px-2.5 py-1 bg-white/5 rounded-lg text-xs text-gray-600 dark:text-gray-500 border border-white/10">
                               +{project.tags.length - 3}
                             </span>
                           )}
@@ -220,7 +214,7 @@ export const Projects = () => {
                     </div>
 
                     {/* Stats */}
-                    <div className="flex items-center gap-4 mb-4 text-sm text-gray-400 pb-4 border-b border-white/5">
+                    <div className="flex items-center gap-4 mb-4 text-sm text-gray-600 dark:text-gray-400 pb-4 border-b border-white/5">
                       <motion.div
                         whileHover={{ scale: 1.1, color: '#fbbf24' }}
                         className="flex items-center gap-1.5 transition-colors"
@@ -266,7 +260,7 @@ export const Projects = () => {
                           rel="noopener noreferrer"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.98 }}
-                          className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white rounded-xl transition-all duration-200 text-sm font-semibold backdrop-blur-sm group/btn"
+                          className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-gray-900 dark:text-white rounded-xl transition-all duration-200 text-sm font-semibold backdrop-blur-sm group/btn"
                         >
                           <ExternalLink className="w-4 h-4 group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5 transition-transform duration-200" />
                           {t('projects.viewDemo')}
@@ -295,9 +289,9 @@ export const Projects = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-accent/20 via-purple-500/20 to-blue-500/20 hover:from-accent/30 hover:via-purple-500/30 hover:to-blue-500/30 backdrop-blur-xl text-accent rounded-2xl transition-all duration-300 font-semibold border border-accent/30 hover:border-accent/50 shadow-lg hover:shadow-accent/20 group relative overflow-hidden"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-accent/10 hover:bg-accent/20 backdrop-blur-sm text-accent rounded-2xl transition-all duration-300 font-semibold border border-accent/30 hover:border-accent/50 group relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/10 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></div>
               <Code2 className="w-6 h-6 group-hover:rotate-12 transition-transform duration-200" />
               <span className="relative z-10">{t('projects.viewAllGitHub')}</span>
               <ExternalLink className="w-5 h-5 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform duration-200" />

@@ -4,27 +4,35 @@
   /* Base styles for light mode */
   :root {
     --color-bg-primary: 255 255 255;
-    --color-bg-secondary: 248 250 252;
-    --color-accent-primary: 14 165 233;
-    --color-accent-secondary: 139 92 246;
-    --color-text-primary: 15 23 42;
-    --color-text-secondary: 71 85 105;
+    --color-bg-secondary: 249 250 251;
+    --color-bg-tertiary: 243 244 246;
+    --color-accent-primary: 37 99 235;
+    --color-accent-secondary: 30 64 175;
+    --color-text-primary: 17 24 39;
+    --color-text-secondary: 75 85 99;
+    --color-text-tertiary: 156 163 175;
+    --color-border: 229 231 235;
+    --color-border-hover: 209 213 219;
   }
 
   /* Dark mode overrides */
   .dark {
-    --color-bg-primary: 2 6 23;
-    --color-bg-secondary: 15 23 42;
-    --color-accent-primary: 34 211 238;
-    --color-accent-secondary: 168 85 247;
-    --color-text-primary: 226 232 240;
-    --color-text-secondary: 148 163 184;
+    --color-bg-primary: 15 23 42;
+    --color-bg-secondary: 30 41 59;
+    --color-bg-tertiary: 51 65 85;
+    --color-accent-primary: 96 165 250;
+    --color-accent-secondary: 147 197 253;
+    --color-text-primary: 248 250 252;
+    --color-text-secondary: 203 213 225;
+    --color-text-tertiary: 148 163 184;
+    --color-border: 51 65 85;
+    --color-border-hover: 71 85 105;
   }
 
   body {
     background-color: rgb(var(--color-bg-primary));
     color: rgb(var(--color-text-primary));
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Space Grotesk', 'JetBrains Mono', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -60,6 +68,10 @@
     color: transparent;
   }
 
+  .bg-gradient-radial {
+    background: radial-gradient(circle at center, var(--tw-gradient-stops));
+  }
+
   .bg-primary {
     background-color: rgb(var(--color-bg-primary));
   }
@@ -68,11 +80,48 @@
     background-color: rgb(var(--color-bg-secondary));
   }
 
+  .bg-tertiary {
+    background-color: rgb(var(--color-bg-tertiary));
+  }
+
   .text-primary {
     color: rgb(var(--color-text-primary));
   }
 
   .text-secondary {
     color: rgb(var(--color-text-secondary));
+  }
+
+  .text-tertiary {
+    color: rgb(var(--color-text-tertiary));
+  }
+
+  .text-accent {
+    color: rgb(var(--color-accent-primary));
+  }
+
+  .bg-accent {
+    background-color: rgb(var(--color-accent-primary));
+  }
+
+  .border-default {
+    border-color: rgb(var(--color-border));
+  }
+
+  .border-hover {
+    border-color: rgb(var(--color-border-hover));
+  }
+
+  /* Fonte monospace para elementos tech */
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  .font-tech {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
   }
 }
