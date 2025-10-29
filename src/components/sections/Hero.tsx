@@ -106,9 +106,10 @@ export const Hero: React.FC = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -5 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-300"
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-150 ease-out"
             >
-              <Linkedin className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors" />
+              <Linkedin className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors duration-150" />
               <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-gray-800 dark:bg-gray-100 backdrop-blur-sm text-white dark:text-gray-800 text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none shadow-md">
                 LinkedIn
                 <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 dark:bg-gray-100 rotate-45"></span>
@@ -122,9 +123,10 @@ export const Hero: React.FC = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -5 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-300"
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-150 ease-out"
             >
-              <Github className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors" />
+              <Github className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors duration-150" />
               <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-gray-800 dark:bg-gray-100 backdrop-blur-sm text-white dark:text-gray-800 text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none shadow-md">
                 GitHub
                 <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 dark:bg-gray-100 rotate-45"></span>
@@ -136,9 +138,10 @@ export const Hero: React.FC = () => {
               onClick={copyEmail}
               whileHover={{ scale: 1.1, y: -5 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-300"
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-150 ease-out"
             >
-              <Mail className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors" />
+              <Mail className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors duration-150" />
               <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-gray-800 dark:bg-gray-100 backdrop-blur-sm text-white dark:text-gray-800 text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none shadow-md">
                 Copiar Email
                 <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 dark:bg-gray-100 rotate-45"></span>
@@ -151,9 +154,10 @@ export const Hero: React.FC = () => {
               download
               whileHover={{ scale: 1.1, y: -5 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-300"
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-150 ease-out"
             >
-              <FileDown className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors" />
+              <FileDown className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors duration-150" />
               <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-gray-800 dark:bg-gray-100 backdrop-blur-sm text-white dark:text-gray-800 text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none shadow-md">
                 Baixar CV
                 <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 dark:bg-gray-100 rotate-45"></span>
@@ -165,9 +169,10 @@ export const Hero: React.FC = () => {
               onClick={scrollToContact}
               whileHover={{ scale: 1.1, y: -5 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-300"
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className="group relative p-3 rounded-xl bg-secondary/50 backdrop-blur-sm border border-default hover:border-accent/50 transition-all duration-150 ease-out"
             >
-              <MessageSquare className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors" />
+              <MessageSquare className="w-6 h-6 text-accent group-hover:text-accent/80 transition-colors duration-150" />
               <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 bg-gray-800 dark:bg-gray-100 backdrop-blur-sm text-white dark:text-gray-800 text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap pointer-events-none shadow-md">
                 Contato
                 <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gray-800 dark:bg-gray-100 rotate-45"></span>

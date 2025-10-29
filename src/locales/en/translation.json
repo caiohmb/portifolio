@@ -61,23 +61,19 @@
   "about": {
     "title": "About Me",
     "description": [
-      "I'm a professional passionate about solving complex problems through pragmatic data and analytics solutions. I work across the entire data project lifecycle, from requirements gathering with stakeholders to delivering robust solutions.",
-      "My expertise lies in accurately diagnosing business challenges and translating them into scalable data architectures, whether in cloud (AWS, Azure) or on-premise environments. I design complete BI and analytics solutions tailored to each client's specific needs.",
-      "With a focus on value delivery, I build efficient data pipelines, implement engineering best practices, and ensure solutions are sustainable and scalable for the long term."
+      "Data Engineer specialized in Lakehouse architectures and Modern Data Stack. I design and implement end-to-end solutions with dbt, Airflow, Spark and cloud-native platforms (Databricks, Snowflake, AWS).",
+      "I work across the full spectrum of data engineering, from real-time streaming pipelines to data-driven application development. I apply DataOps practices (CI/CD, IaC, automated testing) to deliver scalable and sustainable production solutions."
     ],
-    "highlights_title": "What I do:",
+    "highlights_title": "Core Competencies:",
     "highlights": [
-      "Requirements gathering and data problem diagnostics",
-      "Architecture and design of BI solutions in Cloud and On-Premise",
-      "Development of real-time and batch data pipelines",
-      "RAG (Retrieval-Augmented Generation) systems for document analysis",
-      "Integration of LLMs with data warehouses via MCP",
-      "High-performance REST APIs in Go and C#",
-      "Predictive models (regression, classification, time series)",
-      "Implementation of Data Lakes, Data Warehouses, and Lakehouse",
-      "Data-driven fullstack applications with React/TypeScript",
-      "DataOps, MLOps and CI/CD practices",
-      "Optimization of ETL/ELT processes and SQL queries"
+      "Lakehouse Architecture (Delta Lake, Iceberg) and dimensional modeling",
+      "Batch and streaming pipelines (Spark, Kafka, Airflow)",
+      "Data Governance, Quality and Observability in production",
+      "DataOps: CI/CD for data, infrastructure as code (Terraform)",
+      "Data integration for AI/ML and RAG systems",
+      "Legacy system migration to cloud-native",
+      "Fullstack data-driven development (APIs, React/TypeScript)",
+      "Query optimization and performance at scale (TB+)"
     ],
     "stats": {
       "experience": {
@@ -110,9 +106,28 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Get in touch to discuss data projects!",
+    "subtitle": "Have a data project in mind? Let's talk!",
+    "get_in_touch": "Get in Touch",
+    "description": "I'm available for data engineering projects, consultancies and collaborations. I usually respond within 24 hours.",
     "email": "Email",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "linkedin_profile": "View Profile",
+    "github_profile": "View Repositories",
+    "location": "Location",
+    "form": {
+      "name": "Name",
+      "name_placeholder": "Your full name",
+      "email": "Email",
+      "email_placeholder": "your@email.com",
+      "subject": "Subject",
+      "subject_placeholder": "What do you want to talk about?",
+      "message": "Message",
+      "message_placeholder": "Describe your project or question...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "✓ Message sent successfully! I'll get back to you soon.",
+      "error": "✗ Error sending message. Please try again or use direct email."
+    }
   },
   "skills_section": {
     "title": "Skills",

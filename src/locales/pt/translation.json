@@ -61,23 +61,19 @@
   "about": {
     "title": "Sobre Mim",
     "description": [
-      "Sou um profissional apaixonado por resolver problemas complexos através de soluções pragmáticas em dados e analytics. Atuo em todas as etapas do ciclo de vida de projetos de dados, desde o levantamento de requisitos com stakeholders até a entrega de soluções robustas.",
-      "Minha especialidade está em fazer diagnósticos precisos dos desafios de negócio e traduzir isso em arquiteturas de dados escaláveis, sejam em cloud (AWS, Azure) ou on-premise. Desenho soluções completas de BI e analytics adaptadas às necessidades específicas de cada cliente.",
-      "Com foco em entrega de valor, construo pipelines de dados eficientes, implemento boas práticas de engenharia e garanto que as soluções sejam sustentáveis e escaláveis a longo prazo."
+      "Engenheiro de Dados especializado em arquiteturas Lakehouse e Modern Data Stack. Projeto e implemento soluções end-to-end com dbt, Airflow, Spark e plataformas cloud-native (Databricks, Snowflake, AWS).",
+      "Atuo em todo o espectro da engenharia de dados, desde pipelines de streaming em tempo real até desenvolvimento de aplicações data-driven. Aplico práticas de DataOps (CI/CD, IaC, testes automatizados) para entregar soluções escaláveis e sustentáveis em produção."
     ],
-    "highlights_title": "O que eu faço:",
+    "highlights_title": "Principais Competências:",
     "highlights": [
-      "Levantamento de requisitos e diagnóstico de problemas de dados",
-      "Arquitetura e design de soluções de BI em Cloud e On-Premise",
-      "Desenvolvimento de pipelines de dados em tempo real e batch",
-      "Sistemas RAG (Retrieval-Augmented Generation) para análise de documentos",
-      "Integração de LLMs com data warehouses via MCP",
-      "APIs REST de alta performance em Go e C#",
-      "Modelos preditivos (regressão, classificação, séries temporais)",
-      "Implementação de Data Lakes, Data Warehouses e Lakehouse",
-      "Aplicações fullstack orientadas a dados com React/TypeScript",
-      "Práticas de DataOps, MLOps e CI/CD",
-      "Otimização de processos ETL/ELT e queries SQL"
+      "Arquitetura Lakehouse (Delta Lake, Iceberg) e modelagem dimensional",
+      "Pipelines batch e streaming (Spark, Kafka, Airflow)",
+      "Data Governance, Quality e Observability em produção",
+      "DataOps: CI/CD para dados, infraestrutura como código (Terraform)",
+      "Integração de dados para IA/ML e sistemas RAG",
+      "Migração de sistemas legados para cloud-native",
+      "Desenvolvimento fullstack orientado a dados (APIs, React/TypeScript)",
+      "Otimização de queries e performance em escala (TB+)"
     ],
     "stats": {
       "experience": {
@@ -110,9 +106,28 @@
   },
   "contact": {
     "title": "Contato",
-    "subtitle": "Entre em contato para discutir projetos de dados!",
+    "subtitle": "Tem um projeto de dados em mente? Vamos conversar!",
+    "get_in_touch": "Entre em Contato",
+    "description": "Estou disponível para projetos de engenharia de dados, consultorias e colaborações. Respondo geralmente em 24 horas.",
     "email": "Email",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "linkedin_profile": "Ver Perfil",
+    "github_profile": "Ver Repositórios",
+    "location": "Localização",
+    "form": {
+      "name": "Nome",
+      "name_placeholder": "Seu nome completo",
+      "email": "Email",
+      "email_placeholder": "seu@email.com",
+      "subject": "Assunto",
+      "subject_placeholder": "Sobre o que você quer falar?",
+      "message": "Mensagem",
+      "message_placeholder": "Descreva seu projeto ou dúvida...",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": "✓ Mensagem enviada com sucesso! Retornarei em breve.",
+      "error": "✗ Erro ao enviar mensagem. Tente novamente ou use o email direto."
+    }
   },
   "skills_section": {
     "title": "Skills",
