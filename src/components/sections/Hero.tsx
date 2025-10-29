@@ -20,15 +20,15 @@ export const Hero: React.FC = () => {
   };
 
   const copyEmail = async () => {
-    const email = 'seu.email@exemplo.com'; // TODO: Substituir pelo seu email
+    const email = import.meta.env.VITE_CONTACT_EMAIL || 'seu.email@exemplo.com';
     await navigator.clipboard.writeText(email);
     alert('Email copiado para área de transferência!');
   };
 
   const socialLinks = {
-    linkedin: 'https://www.linkedin.com/in/seu-perfil', // TODO: Substituir
-    github: 'https://github.com/caiohmb',
-    cv: '/caminho/para/seu-cv.pdf', // TODO: Adicionar CV
+    linkedin: import.meta.env.VITE_LINKEDIN_URL || 'https://www.linkedin.com/in/seu-perfil',
+    github: import.meta.env.VITE_GITHUB_URL || 'https://github.com/seu-usuario',
+    cv: import.meta.env.VITE_CV_URL || '/cv/seu-cv.pdf',
   };
 
   return (
