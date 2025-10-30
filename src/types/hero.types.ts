@@ -1,39 +1,5 @@
 // Hero Section Types
 
-export interface Technology {
-  name: string;
-  icon: string;
-  color: string;
-}
-
-export interface CTAButton {
-  label: string;
-  href: string;
-  variant?: 'primary' | 'secondary' | 'outline';
-}
-
-export interface Certification {
-  name: string;
-  icon: string;
-  issuer: string;
-  year: number;
-  verifyUrl?: string;
-  badgeUrl?: string;
-}
-
-export interface HeroData {
-  greeting: string;
-  name: string;
-  title: string;
-  tagline: string[];
-  mainTechnologies: Technology[];
-  certifications: Certification[];
-  cta: {
-    primary: CTAButton;
-    secondary: CTAButton;
-  };
-}
-
 export interface TypeWriterProps {
   texts: string[];
   typingSpeed?: number;
@@ -48,9 +14,4 @@ export interface GlitchEffectProps {
   className?: string;
   triggerOnHover?: boolean;
   autoPlay?: boolean;
-}
-
-export interface TechBadgesProps {
-  technologies: Technology[];
-  delay?: number;
 }
