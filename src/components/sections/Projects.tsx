@@ -260,7 +260,7 @@ export const Projects = () => {
                           rel="noopener noreferrer"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.98 }}
-                          className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-gray-900 dark:text-white rounded-xl transition-all duration-200 text-sm font-semibold backdrop-blur-sm group/btn"
+                          className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-secondary/70 hover:bg-secondary rounded-xl transition-all duration-200 text-sm font-semibold backdrop-blur-sm group/btn text-primary border-2 border-gray-800/30 hover:border-gray-800/50 dark:border-white/10 dark:hover:border-white/20"
                         >
                           <ExternalLink className="w-4 h-4 group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5 transition-transform duration-200" />
                           {t('projects.viewDemo')}

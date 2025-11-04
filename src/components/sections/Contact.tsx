@@ -72,12 +72,9 @@ export const Contact: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary">
             {t('contact.title')}
           </h2>
-          <p className="text-lg text-secondary max-w-2xl mx-auto">
-            {t('contact.subtitle')}
-          </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-[40%_60%] gap-12">

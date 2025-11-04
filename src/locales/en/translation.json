@@ -4,12 +4,12 @@
     "name": "Caio Maia",
     "title": "Data Engineer",
     "tagline": [
-      "Architecting data platforms at petabyte scale",
-      "Orchestrating mission-critical pipelines with 99.9% uptime",
-      "Implementing data lakehouse with Delta Lake and Apache Iceberg",
-      "Reducing cloud costs by 40% through query optimization",
-      "Building production RAG systems for LLMs",
-      "Leading legacy warehouse migration to modern architectures"
+      "Building distributed data infrastructure with Spark and Kafka",
+      "Implementing DataOps: CI/CD, automated testing and observability",
+      "Building data lakehouse with Delta Lake and Apache Iceberg",
+      "Designing end-to-end BI architectures focused on self-service analytics",
+      "Integrating data for RAG systems and production AI applications",
+      "Leading legacy warehouse migration to Modern Data Stack"
     ],
     "certifications_title": "Certifications",
     "cta_primary": "View Projects",
