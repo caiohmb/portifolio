@@ -3,9 +3,9 @@ import type { TypeWriterProps } from '@/types';
 
 export const TypeWriter: React.FC<TypeWriterProps> = ({
   texts,
-  typingSpeed = 100,
-  deletingSpeed = 50,
-  pauseDuration = 2000,
+  typingSpeed = 50,
+  deletingSpeed = 30,
+  pauseDuration = 1500,
   className = '',
 }) => {
   const [displayText, setDisplayText] = useState('');
@@ -18,7 +18,7 @@ export const TypeWriter: React.FC<TypeWriterProps> = ({
     // Cursor blink
     const cursorInterval = setInterval(() => {
       setShowCursor((prev) => !prev);
-    }, 530);
+    }, 400);
 
     return () => clearInterval(cursorInterval);
   }, []);

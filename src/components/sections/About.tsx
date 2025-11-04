@@ -12,16 +12,6 @@ export const About: React.FC = () => {
       label: t('about.stats.experience.label')
     },
     {
-      icon: "🚀",
-      value: t('about.stats.projects.value'),
-      label: t('about.stats.projects.label')
-    },
-    {
-      icon: "💻",
-      value: t('about.stats.technologies.value'),
-      label: t('about.stats.technologies.label')
-    },
-    {
       icon: "🎓",
       value: t('about.stats.certifications.value'),
       label: t('about.stats.certifications.label')

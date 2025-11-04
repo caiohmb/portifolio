@@ -19,7 +19,7 @@ export const Button: React.FC<ButtonProps> = ({
     secondary: 'bg-secondary/70 text-primary shadow-sm hover:shadow-md border border-default hover:border-hover focus:ring-2 focus:ring-accent/30',
 
     // Outline - Clean border style
-    outline: 'bg-transparent backdrop-blur-sm border-2 border-accent text-accent hover:bg-accent/10 hover:shadow-lg hover:shadow-accent/20 focus:ring-2 focus:ring-accent/30',
+    outline: 'bg-transparent backdrop-blur-sm border-2 border-accent text-accent shadow-md shadow-accent/15 hover:bg-accent/10 hover:shadow-lg hover:shadow-accent/25 hover:scale-[1.02] focus:ring-2 focus:ring-accent/30',
 
     // Ghost - Minimal style
     ghost: 'text-primary bg-transparent hover:bg-secondary/50 focus:ring-2 focus:ring-accent/20',

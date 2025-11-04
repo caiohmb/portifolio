@@ -4,12 +4,12 @@
     "name": "Caio Maia",
     "title": "Data Engineer",
     "tagline": [
-      "Transforming raw data into strategic insights",
-      "Building scalable and efficient pipelines",
-      "Developing data-driven fullstack solutions",
-      "Integrating AI/ML into modern data architectures",
-      "Optimizing Big Data architectures",
-      "Creating RAG systems and high-performance APIs"
+      "Architecting data platforms at petabyte scale",
+      "Orchestrating mission-critical pipelines with 99.9% uptime",
+      "Implementing data lakehouse with Delta Lake and Apache Iceberg",
+      "Reducing cloud costs by 40% through query optimization",
+      "Building production RAG systems for LLMs",
+      "Leading legacy warehouse migration to modern architectures"
     ],
     "certifications_title": "Certifications",
     "cta_primary": "View Projects",
@@ -66,12 +66,13 @@
     ],
     "highlights_title": "Core Competencies:",
     "highlights": [
+      "End-to-end BI architecture design with focus on self-service analytics",
       "Lakehouse Architecture (Delta Lake, Iceberg) and dimensional modeling",
       "Batch and streaming pipelines (Spark, Kafka, Airflow)",
       "Data Governance, Quality and Observability in production",
       "DataOps: CI/CD for data, infrastructure as code (Terraform)",
       "Data integration for AI/ML and RAG systems",
-      "Legacy system migration to cloud-native",
+      "Cloud cost reduction up to 70% through optimization and right-sizing",
       "Fullstack data-driven development (APIs, React/TypeScript)",
       "Query optimization and performance at scale (TB+)"
     ],

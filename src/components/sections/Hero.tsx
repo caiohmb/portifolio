@@ -41,7 +41,7 @@ export const Hero: React.FC = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
             className="text-lg md:text-xl text-accent"
           >
             {t('hero.greeting')}
@@ -50,7 +50,7 @@ export const Hero: React.FC = () => {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold"
           >
             <GlitchEffect text={t('hero.name')} className="text-primary" />
@@ -59,7 +59,7 @@ export const Hero: React.FC = () => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className="text-2xl md:text-4xl lg:text-5xl font-semibold text-primary"
           >
             <span className="inline-block">
@@ -72,16 +72,16 @@ export const Hero: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             className="max-w-3xl mx-auto"
           >
-            <TypeWriter texts={tagline} delay={0.8} />
+            <TypeWriter texts={tagline} />
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.0 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center pt-8"
           >
             <Button variant="primary" size="lg" onClick={scrollToProjects}>
@@ -96,7 +96,7 @@ export const Hero: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            transition={{ duration: 0.4, delay: 0.8 }}
             className="flex items-center justify-center gap-4 pt-8"
           >
             {/* LinkedIn */}
